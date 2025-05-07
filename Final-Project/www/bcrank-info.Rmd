@@ -1,0 +1,45 @@
+---
+title: "Bcrank Info"
+author: "Christian Otto"
+bibliography: references.bib
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+To use the BCRANK [@BCRANK_package] algorithm to its full potential, the DNA sequences should be placed in order of most likely to contain the consensus motif. The BCRANK algorithm begins by randomly selecting a consensus sequence. The score is then calculated by taking into consideration the number of occurrences of this consensus sequence and the rank of the DNA sequence. After this score has been calculated, all consensus sequences in a neighborhood of the initial guess are scored and the one with the highest score is kept. This finds a local optimum. The entire process is started again with a new randomly selected consensus motif. We repeat this process 100 times in hopes of finding the global optimum. [@ameur_identification_2009]
+
+The neighborhood of the consensus sequence is represented by being able to add or remove a nucleotide on either side of the consensus sequence. The neighborhood of the consensus sequence also allows for one nucleotide to be changed to a different nucleotide. This neighborhood methodology allows for the algorithm to search for a motif of length $k$, but it also allows the algorithm to explore a motif up to a length of $k \pm 2$. Because the BCRANK method assumes an ordering of the DNA sequences, the scoring function checks how many times that consensus sequence appears in each of the DNA sequences, weighing the appearance of the consensus sequence higher in the top ranked DNA sequences. BCRANK then reorders the DNA sequences (to not be ranked at all) and scores them, this reordering process is repeated many times to form a distribution of unranked scores. We then compute a t-statistic for our ranked DNA motif to determine if the consensus motif is an optimum. [@ameur_identification_2009]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::
+
+
+
+
+
+
