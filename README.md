@@ -1,0 +1,1 @@
+The use the Shiny App, open the R project file, open the server.R and ui.R. On ui.R click the "Run App" button in the top right. When the app runs, it should automatically install and load any required libraries. If it does not, open the required-libraries.R and install the libraries which are missing.
