@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-The app include a real example data set containing 100 (originally 2,500 but reduced for computational time) DNA sequences from a ChIP-chip experiment for the protein USF1 in the human liver, ranked by how likely they are to contain the regulatory motif [@rada-iglesias_whole_genome_2008]. Each DNA sequence was trimmed to be 500 nucleotides long. This trimming was done so the app chould show results for real data while not taking several hours to run. If you are interested in the original data, please see the reference at the bottom [@rada-iglesias_whole_genome_2008].
+The app include a real example data set containing 100 (originally 2,500 but reduced for computational time) DNA sequences from a ChIP-chip experiment for the protein USF1 in the human liver, ranked by how likely they are to contain the regulatory motif [@rada-iglesias_whole_genome_2008]. Each DNA sequence was trimmed to be 500 nucleotides long. This trimming was done so the app could show results for real data while not taking several hours to run. If you are interested in the original data, please see the reference at the bottom [@rada-iglesias_whole_genome_2008].
 
 To load the full data you can use `data <- system.file("Exfiles/USF1_small.fa", package="BCRANK")` [@ameur_identification_2009].
 
